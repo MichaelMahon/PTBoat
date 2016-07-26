@@ -32,11 +32,6 @@ public class PTBoatGame
 		
 		numberOfBoats++;
 	}
-	
-	public void printFinalResults()
-	{
-		System.out.println("\nTotal hits: " + numberOfHits + "\nTotal Misses: " + numberOfMisses + "\nTotal Guesses: " + getNumberOfGuesses());
-	}
 
 	public boolean guess(String row, int column)
 	{
@@ -56,6 +51,11 @@ public class PTBoatGame
 		System.out.println("Guess " + getNumberOfGuesses() + " Missed");
 		return false;
 	} 
+	
+	public void printFinalResults()
+	{
+		System.out.println("\nTotal hits: " + numberOfHits + "\nTotal Misses: " + numberOfMisses + "\nTotal Guesses: " + getNumberOfGuesses());
+	}
 
 	public static void main(String[] args)
 	{

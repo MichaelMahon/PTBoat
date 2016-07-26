@@ -17,6 +17,6 @@ public class PTBoat
 
 	public boolean isHit(String row, int column)
 	{
-		return row == this.row && column == this.column ? true : false;
+		return row.equalsIgnoreCase(this.row) && column == this.column ? true : false;
 	}
 }
